@@ -1,0 +1,1 @@
+A file can be removed easily from git index and working directory by Git rm command.After adding a file in Git,you may require removing it for different reasons and at varoius levels
