@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> link states </title>
+  <style>
+  body{
+  background-color:yellow;
+  }
+  h2{
+  color:violet;
+  font-size:20px;
+  }
+ input:link{
+ color:red;
+ }
+ input:visited{
+ color:green;
+ }
+ input:hover{
+ color:hotpink;
+ }
+ input:active{
+ color:blue;
+ }
+ button:link{
+ color:green;
+ }
+ button:visited{
+ color:red;
+ }
+ button:hover{
+ color:blue;
+ }
+ button:active{
+ color:hotpink;
+ }
+  </style>
+ </head>
+
+ <body>
+ <h2>click on submit button to go targetstudy page</h2>
+ <form action="https://targetstudy.com/languages/english/paragraph-writing.html#:~:text=%20Paragraph%20Writing%20%201%20Unity.%20The%20first,constructed%20yet%20their%20size%20should%20be...%20More%20">
+ <input type="submit" value="Go to targetstudy">
+ </form>
+  <h2>click here to go register page</h2>
+  <button type="button" onclick="document.location='register.html'">register</button>
+ </body>
+</html>
