@@ -1,0 +1,54 @@
+<!DOCTYPE HTML >
+<html>
+ <head>
+  <title>Name  validation</title>
+ </head>
+  <body bgcolor="aqua">
+
+<form method="get" onsubmit ="return validation()" >
+<div><label for="name">Name:</label>
+<input type="text" id="name" name="name" value=" " >
+<span id="msg" style="color:red"></span></div>
+<div><label for="number">Phone Number:</label>
+<input type="number" name="number" value="" placeholder="Ex:0123456789"/>
+	</div>
+<div>
+<label for="radio">Choice of course:<label>
+<input type="radio" name="course" value="course" />Bachelors
+<input type="radio" name="course" value="course" />Masters
+</div>
+    <label for="description">Description:</label>
+	<textarea id="decription" name="description"></textarea>
+	</div>
+<div><label for="subject">Subjects Interests:</label>
+	<input type="checkbox" id="C" name="C" value="C">
+<label for="C"> C Programming</label><br>
+<input type="checkbox" id="java" name="java" value="java">
+<label for="java"> java</label><br>
+<input type="checkbox" id="python" name="python" value="python">
+<label for="python"> Python</label><br>
+<input type="checkbox" id="oracle" name="oracle" value="oracle">
+<label for="oracle">Oracle</label><br>
+<input type="checkbox" id="html" name="html" value="html">
+<label for="html">HTML</label><br>
+<input type="checkbox" id="javascript" name="javascript" value="javascript">
+<label for="javascript">javascript</label><br><br>
+</div>
+<div><input type="submit" value="Submit"></input></div>
+</form>
+<script>
+function validation(){
+var letter=/^[A-Za-z]+$/;
+var a =document.getElementById("name").value;
+if(a.match(letter))
+true;
+else{
+document.getElementById("msg").innerHTML="only alphabets are allowed";
+return false;
+}
+}
+</script>
+ </body>
+</html>
+
+
