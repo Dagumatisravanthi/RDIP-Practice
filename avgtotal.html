@@ -1,0 +1,63 @@
+<!DOCTYPE HTML >
+<html>
+ <head>
+  <title> New Document </title>
+<style>
+ table,th,td {
+     border:1px solid black;
+	 border-collapse:collapse;
+	 }
+</style>
+ </head>
+ <body>
+ <table style="width:100%" >
+   <tr>
+      <th>Subject</th>
+	  <th>Marks</th>
+   </tr>
+   <tr>
+      <td>Compiler design</td>
+	  <td>75</td>
+   </tr>
+   <tr>
+      <td>Data warehousing and mining</td>
+	  <td>70</td>
+   </tr>
+   <tr>
+      <td>Artificial Intelligence</td>
+	  <td>80</td>
+	
+   </tr>
+   <tr>
+      <td>Web Information technology</td>
+	  <td>75</td>
+   </tr>
+   <tr>
+      <td>Design Pattern</td>
+	  <td>72</td>
+   </tr>
+   <tr>
+      <td>Design analysys and Algorithm </td>
+	  <td>60</td>
+   </tr>
+    <tr>
+      <td>Total marks</td>
+	  <td id="total"></td>
+   </tr>
+   <tr>
+      <td>Average</td>
+	  <td id="avg"></td>
+   </tr>
+   </table>
+  <script>
+  var marks=[75,70,80,75,72,60]
+  var total=0;
+  for(var i=0;i< marks.length;i++){
+  total +=marks[i];
+  }
+  var avg=total/marks.length;
+  document.getElementById("total").innerHTML=total ;
+  document.getElementById("avg").innerHTML=avg;
+  </script>
+ </body>
+</html>
