@@ -1,0 +1,90 @@
+<!DOCTYPE HTML >
+<html>
+ <head>
+  <title>Name  validation</title>
+ </head>
+  <body bgcolor="aqua">
+
+<form method="post" target="_self" onclick ="return displayDetails()" >
+<div id="container">
+<div class="input">Name:</label>
+<input type="text" id="name" name="name" value=" " >
+<span id="msg" style="color:red"></span></div>
+<div class="input">Phone Number:</label>
+<input type="number" id="number" name="number" value="" placeholder="Ex:0123456789"/>
+<span id="phn" style="color:red"></span>
+	</div>
+<div class="input">
+<label for="radio">Choice of course:<label>
+<input type="radio" id=" course" name="course" value="course" />Bachelors
+<input type="radio" id="course" name="course" value="course" />Masters
+</div class="input">
+    <label for="description">Description:</label>
+	<textarea id="decription" name="description"></textarea>
+	</div>
+<div class="input"><label for="subject">Subjects Interests:</label>
+	<input type="checkbox" id="c" name="C" value="C">
+<label for="C"> C Programming</label><br>
+<input type="checkbox" id="c" name="java" value="java">
+<label for="java"> java</label><br>
+<input type="checkbox" id="c" name="python" value="python">
+<label for="python"> Python</label><br>
+<input type="checkbox" id="c" name="oracle" value="oracle">
+<label for="oracle">Oracle</label><br>
+<input type="checkbox" id="c" name="html" value="html">
+<label for="html">HTML</label><br>
+<input type="checkbox" id="c" name="javascript" value="javascript">
+<label for="javascript">javascript</label><br><br>
+</div>
+<button id="entry">submit</input>
+</div>
+<table id="display">
+<tr>
+<th>Name</th>
+<th>Phone number</th>
+<th>Choice of course</th>
+<th>Description</th>
+<th>Subject interest</th>
+</tr>
+</table>
+<script>
+var row=1;
+var entry=document.getElementById("entry");
+entry.addEventListener("click",displayDetails);
+function displayDetails(){
+var name=document.getElementById("name").value;
+var number=document.getElementById("number").value;
+var course=document.getElementById("course").value;
+var description=document.getElementById("description").value;
+var c=document.getElementById("c").value;
+var letter=/^[A-Za-z]+$/;
+var b=document.getElementById("number").value;
+if(!b.match(letter))
+true;
+else{
+document.getElementById("phn").innerHTML="only alphabets are allowed";
+return false;
+}
+if(!name||!number||!c){
+alert("please fill the boxes");
+return;
+}
+var display=document.getElementById("display");
+var newRow=display.insertRow(row);
+var cell1=newRow.insertCell(0);
+var cell2=newRow.insertCell(1);
+var cell3=newRow.insertCell(2);
+var cell4=newRow.insertCell(3);
+var cell5=newRow.insertCell(4);
+cell1.innerHTml=name;
+cell1.innerHTml=number;
+cell1.innerHTml=course;
+cell1.innerHTml=description;
+cell1.innerHTml=c;
+}
+row++
+</script>
+ </body>
+</html>
+
+
