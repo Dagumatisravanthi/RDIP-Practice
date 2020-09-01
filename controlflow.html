@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> controlflows </title>
+ </head>
+ <body>
+ <p>By using if condition</p>
+  <p id="demo"></p>
+  <script>
+  var num=prompt("Enter the number");
+  if(num>10 && num<100)
+  {
+  document.getElementById('demo').innerHTML="The number is between 10-100"
+  }
+  else{
+document.getElementById('demo').innerHTML="The number is not between 10-100"
+  }
+  </script>
+  <p>By using switch case</p>
+  <p id="sample"></p>
+  <script>
+  switch(1){
+  case 1:if(num>10 && num<100)
+         {
+           document.getElementById('sample').innerHTML="The number is between 10-100"
+         }
+		 break;
+    default: {
+document.getElementById('sample').innerHTML="The number is not between 10-100"
+  }
+  }
+  </script>
+  <p>Fibonacci series by usingfor loop</p>
+  <script>
+  var num1=prompt("Enter a number for fibonacci series");
+  var a=0,b=1;
+  document.write("Fobonacci series:");
+  document.write("",a,"");
+  document.write("",b,"");
+  var count,sum;
+  for(count=2;count<num1;count++)
+  {
+  sum=a+b;
+  document.write("",sum,"");
+  a=b;
+  b=sum;
+  }
+  </script>
+ </body>
+</html>
