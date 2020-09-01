@@ -1,0 +1,51 @@
+<!DOCTYPE HTML >
+<html>
+ <head>
+<title>events</title>
+<body>
+<div><p>onkeydown</p>
+<input type="text" onkeydown="myFunction()">
+<script>
+function myFunction(){
+alert("you pressed a key");
+}
+</script>
+<p>onclick</p>
+<button onclick="myDemo()">Click me</button>
+<p id="demo"></p>
+<script>
+function myDemo(){
+document.getElementById("demo").innerHTML="Hello World";
+}
+</script>
+<p>onmouseover</p>
+<img onmouseover="bigImg(this)" 
+onmouseout="normalImg(this)"
+border="0" src="https://tse1.mm.bing.net/th?id=OIP.Yhr9t2pew7DOGGMgzKDDxwHaIc&pid=Api&rs=1&c=1&qlt=95&w=94&h=107" width="32" height="32">
+<script>
+function bigImg(x){
+x.style.height="64px";
+x.style.width="64px";
+}
+function normalImg(x){
+x.style.height="32px";
+x.style.width="32px";
+}
+</script>
+<p>onmouseout</p>
+<img onmouseover= "normalImg(this)"
+onmouseout="bigImg(this)"
+border="0" src="https://tse1.mm.bing.net/th?id=OIP.Yhr9t2pew7DOGGMgzKDDxwHaIc&pid=Api&rs=1&c=1&qlt=95&w=94&h=107" width="32" height="32">
+<script>
+function bigImg(x){
+x.style.height="64px";
+x.style.width="64px";
+}
+function normalImg(x){
+x.style.height="32px";
+x.style.width="32px";
+}
+</script>
+</div>
+ </body>
+</html>
