@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> controlflows </title>
+ </head>
+ <body>
+ <p>By using if condition</p>
+  <p id="demo"></p>
+  <script>
+  var num=prompt("Enter the number");
+  try{
+  if(num>10 && num<100)
+  {
+  document.getElementById('demo').innerHTML="The number is between 10-100";
+  }
+  }
+  catch(err){
+document.getElementById('demo').innerHTML="The number is not between 10-100"+err;
+  }
+  finally{
+  document.getElementById('demo').innerHTML="This is finally block";
+  }
+  </script>
+ </body>
+</html>
