@@ -1,0 +1,26 @@
+<!DOCTYPE HTML >
+<html>
+ <head>
+  <title> postexample </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("button").click(function(){
+  $.get("postasp.asp",
+  {
+  name:"ram menan",
+  city:"paris"
+  },
+  function(data,status)
+  {
+  alert("Data:"+data+"\nStatus:"+status);
+  });
+  });
+  });
+</script>
+ </head>
+ <body>
+ <p>post method</p>
+  <button>POST Request</button>
+ </body>
+</html>
